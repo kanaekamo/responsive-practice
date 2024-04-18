@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+.q1{
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  background: #ff0000;
+}
+.size{
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  line-height: 300px;
+}
+.q2{
+  margin: 0 auto;
+  background: #ff0000;
+}
+.flexbox{
+  display: flex;
+  justify-content: center;
+}
+.q3-1{
+  background: #0008ff;
+}
+.q3-2{
+  background: #22ff00;
+  margin-left: 150px;
+}
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.center{
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.q4-1{
+  background: #ff0000;
+  float: left;
+}
+.q4-2{
+  background: #0008ff;
+  float: left;
+}
+.q5-1{
+  background: #ff0000;
+}
+.q5-2{
+  background: #0008ff;
+}
+.q5-3{
+  background: #ff8400;
+}
+.q6-1{
+  background: #00ff51;
+}
+.q6-2{
+  background: #d4ff00;
+}
+.q6-3{
+  background: #ff00e1;
+}
+.q7-1{
+  background: #ff0000;
+}
+.q7-2{
+  background: #0008ff;
+  display: none;
+}
+.q7-3{
+  background: #00ff51;
+}
+@media screen and (max-width:960px){
+  .q1{
+    width: 200px;
+    height: 200px;
+  }
+  .q2{
+    background: #007bff;
+  }
+  .q3-2{
+    margin-left: 50px;
+  }
+  .q4-1,.q4-2{
+    clear: left;
+  }
+  .center{
+    width: 300px;
+  }
+  .q5flex{
+    flex-direction: row-reverse;
+  }
+  .q6-1{
+    order: 1;
+  }
+  .q6-2{
+    order: 2;
+  }
+  .q7-1{
+    display: none;
+  }
+  .q7-2{
+    display: block;
+  }
+}
